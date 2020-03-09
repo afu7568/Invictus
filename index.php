@@ -19,7 +19,7 @@
     <div class='container-fluid'>
       <div class='row'>
         <!-- The websites logo, name, and slogan -->
-        <h3>Locate, Secure, <div  class='no'>Eliminate</div></h3>
+        <h3>Locate, Secure, <div  class='no'>Return</div></h3>
         <br><br><br><br>
         <div class='col-12 text-center'>
           <img src='logo2.png' height='100%' width='250px'>
@@ -35,6 +35,7 @@
         <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.4266892722085!2d172.60702811568828!3d-43.4934335874895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d318b9f4f4e040f%3A0xc0ed68281f6bda47!2sNorthlands%20Shopping%20Centre!5e0!3m2!1sen!2snz!4v1583277779154!5m2!1sen!2snz" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>-->
         <br><br><br><br>
         <?php include('map.html');?>
+
       </div>
     </div>
 
