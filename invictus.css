@@ -3,27 +3,13 @@
  font-family: 'Roboto Condensed', sans-serif;
 }
 body { /*Creates an unmoving background for the website*/
-  background: url(background2.jpg) no-repeat center center fixed;
+  margin-top: 90px;
+  margin-bottom: 100px;
+  background: url(background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-h1{
-  color: rgb(255,255,255);
-  display: inline;
-}
-h3{
-  color: rgb(255,255,255);
-  display: inline;
-}
-.no{
-  color: rgb(255,0,0);
-  display: inline;
-}
-.yes{
-  color: rgb(0,0,0);
-  display: inline;
 }
 .button-style-1{
   background-color: transparent;
@@ -39,19 +25,20 @@ h3{
 }
 .button-style-2{
   border-radius: 5%;
+  background-color: rgb(80, 80, 80);
 	color: rgb(255, 255, 255);
   border: 2px solid rgb(255, 255, 255);
   cursor: pointer;
 }
 .button-style-2:hover{
-  color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
   background-color: transparent;
-  border: 2px solid rgb(255, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
 }
 
 /*navbar related classes*/
 .custom-nav { /*Colors navbar, fixes it to the top of the page, and makes it sit above other content*/
- background: rgb(255,255,255);
+ background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0));
  z-index: 100;
  top:0;
 }

@@ -1,4 +1,19 @@
 <!doctype html>
+<?php
+  //sets up $dbconnect initially, this is used to connect to database when ever any sql code is used
+  $dbconnect = mysqli_connect("localhost", "root", "root", "cottonstreet");
+
+  /*Starts a session if no sessions have been started, this is done so information in the session can be accessed by the page
+  i.e. allows the website to know if you are logged in or not*/
+  if (session_status() == PHP_SESSION_NONE || session_status() == PHP_SESSION_DISABLED) {
+    session_start();
+  }
+  /*if the user is has selected the logout button, or the user has not logged in yet (nothing set in the session),
+  then the session is destroyed*/
+  if (isset($_GET['logout']) || !isset($_SESSION['user_ID'])){
+    session_destroy();
+  }
+?>
 <!--Language is english-->
 <html lang='en'>
   <head>
@@ -12,31 +27,36 @@
     <link rel='stylesheet' href='invictus.css'>
 
     <!--Title of the website-->
-    <title>Invictus</title>
+    <title>Devota</title>
   </head>
   <body>
     <!--Container fluid so the container is full-width instead of fixed-width-->
     <div class='container-fluid'>
-      <div class='row'>
-        <!-- The websites logo, name, and slogan -->
-        <h3>Locate, Secure, <div  class='no'>Return</div></h3>
-        <br><br><br><br>
-        <div class='col-12 text-center'>
-          <img src='logo2.png' height='100%' width='250px'>
-        </div>
-        <div class='col-12 text-center'>
-          <h1>I n v i <div class="yes">c t u s</div></h1>
-        </div>
-        <!-- Links for the loginsignup page -->
-        <div class='mt-3 col-12 text-center'>
-          <a class='py-2 px-3 mr-5 button-style-2' href='index.php?page=loginsignup'>Residents</a>
-          <a class='py-2 px-3 ml-5 button-style-1' href='map.html'>Map</a>
-        </div>
-        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.4266892722085!2d172.60702811568828!3d-43.4934335874895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d318b9f4f4e040f%3A0xc0ed68281f6bda47!2sNorthlands%20Shopping%20Centre!5e0!3m2!1sen!2snz!4v1583277779154!5m2!1sen!2snz" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>-->
-        <br><br><br><br>
-        <?php include('map.html');?>
+      <?php
+        //Includes the navbar, it is present on every page, hence why it is included on the base page
+        include('navbar.php');
 
-      </div>
+        //This code checks the $_GET array to determine what page to display, this is a one page website
+        if (isset($_GET['page'])){
+          $page_name = $_GET['page'];
+
+          //Checks if a page with the name in the $_GET array exists
+          if (file_exists("$page_name.php")){
+            //If the page does exist then it is displayed
+            include("$page_name.php");
+          }
+
+          //If page doesn't exist an error message is displayed
+          else{
+            include('error404.php');
+          }
+        }
+        //Shows the default, home page if the $_GET array has no page name
+        else{
+          include('home.php');
+        }
+        include('footer.php');
+      ?>
     </div>
 
 
