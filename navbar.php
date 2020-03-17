@@ -8,7 +8,7 @@ also is used to log out. The links displayed will depend on whether you are logg
   <nav class='navbar navbar-light navbar-expand-lg col-12 custom-nav position-fixed'>
 
     <!--Displays logo-->
-    <a class="" href="index.php"><img class='' src="logo.png" height="100%" width="50px"></a>
+    <a class="" href="index.php"><img class='' src="Logo.png" height="100%" width="50px"></a>
 
     <!--Collapsing navbar so that the website is responsive for different device sizes-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

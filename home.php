@@ -5,7 +5,7 @@
 <div class='row'>
   <!-- The websites logo, name, and slogan -->
   <div class='col-12 text-center'>
-    <img src='logo.png' height='100%' width='250px'>
+    <img src='Logo.png' height='100%' width='250px'>
   </div>
   <div class='col-3'></div>
   <div class='col-6 text-center'>
