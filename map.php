@@ -1,5 +1,5 @@
 <!-- Script for Google Maps UI -->
-<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDqpU9_3Egn7sfsW2CSFlp7H8Ohp0dQ7Hg&sensor=false"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqpU9_3Egn7sfsW2CSFlp7H8Ohp0dQ7Hg&sensor=false"></script>
 <script>
   function initialize(){
     var mapProp = {
