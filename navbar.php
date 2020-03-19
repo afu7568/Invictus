@@ -24,6 +24,9 @@ also is used to log out. The links displayed will depend on whether you are logg
         <li class='nav-item'>
           <a class='nav-link p-3 my-2 mx-3' href='index.php?page=contact'>Contact</a>
         </li>
+        <li class='nav-item'>
+          <a class='nav-link p-3 my-2 mx-3' href='index.php?page=map'>Map</a>
+        </li>
         <li class='nav-item dropdown'>
           <a class="nav-link dropdown-toggle p-3 my-2 mx-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Products
