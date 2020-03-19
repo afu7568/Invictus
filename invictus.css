@@ -25,9 +25,9 @@ body { /*Creates an unmoving background for the website*/
 }
 .button-style-2{
   border-radius: 5%;
-  background-color: rgb(80, 80, 80);
-	color: rgb(255, 255, 255);
-  border: 2px solid rgb(255, 255, 255);
+  background-color: rgba(47, 168, 243, 0.2);
+	color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
   cursor: pointer;
 }
 .button-style-2:hover{
@@ -38,7 +38,7 @@ body { /*Creates an unmoving background for the website*/
 
 /*navbar related classes*/
 .custom-nav { /*Colors navbar, fixes it to the top of the page, and makes it sit above other content*/
- background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0));
+ background-color: white;
  z-index: 100;
  top:0;
 }

@@ -6,6 +6,7 @@
   width: 100%;
   height: 300px;
   background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+  pointer-events: none;
 }
 .footer {
   position: fixed;
@@ -15,6 +16,7 @@
   height: 70px;
   color: black;
   text-align: center;
+  pointer-events: all;
 }
 </style>
 

@@ -8,7 +8,7 @@ also is used to log out. The links displayed will depend on whether you are logg
   <nav class='navbar navbar-light navbar-expand-lg col-12 custom-nav position-fixed'>
 
     <!--Displays logo-->
-    <a class="" href="index.php"><img class='' src="Logo.png" height="100%" width="50px"></a>
+    <a class="" href="index.php"><img class='' src="logo.png" height="100%" width="50px"></a>
 
     <!--Collapsing navbar so that the website is responsive for different device sizes-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,9 +23,6 @@ also is used to log out. The links displayed will depend on whether you are logg
         </li>
         <li class='nav-item'>
           <a class='nav-link p-3 my-2 mx-3' href='index.php?page=contact'>Contact</a>
-        </li>
-        <li class='nav-item'>
-          <a class='nav-link p-3 my-2 mx-3' href='index.php?page=map'>Map</a>
         </li>
         <li class='nav-item dropdown'>
           <a class="nav-link dropdown-toggle p-3 my-2 mx-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -74,7 +71,7 @@ also is used to log out. The links displayed will depend on whether you are logg
             }
             //If a user is logged in then a link to the cart page of the website is added, and a button which logs out the user
             echo "<li class='nav-item dropdown'>
-              <a class='nav-link p-3 my-2 mx-3' href='index.php?page=cart'>Cart</a>
+              <a class='nav-link p-3 my-2 mx-3' href='index.php?page=map'>Map</a>
             </li>
             <li class='nav-item dropdown'>
               <a class='nav-link p-3 my-2 mx-3' href='index.php?logout=1'>Logout</a>
@@ -83,7 +80,7 @@ also is used to log out. The links displayed will depend on whether you are logg
           //If a user is not logged in then the only link displayed is a link to the login and sign up page on the website
           else{
             echo "<li class='nav-item dropdown'>
-              <a class='nav-link p-3 my-2 mx-3' href='index.php?page=loginsignup'>Login/Sign Up</a>
+              <a class='nav-link p-3 my-2 mx-3' href='index.php?page=loginsignup'>Login</a>
             </li>";
           }
          ?>

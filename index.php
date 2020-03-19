@@ -1,7 +1,7 @@
 <!doctype html>
 <?php
   //sets up $dbconnect initially, this is used to connect to database when ever any sql code is used
-  $dbconnect = mysqli_connect("jnugvpmyub", "root", "root", "cottonstreet");
+  $dbconnect = mysqli_connect("localhost", "root", "root", "devota");
 
   /*Starts a session if no sessions have been started, this is done so information in the session can be accessed by the page
   i.e. allows the website to know if you are logged in or not*/
@@ -34,14 +34,14 @@
     <div class='container-fluid'>
       <?php
         //Includes the navbar, it is present on every page, hence why it is included on the base page
-        include('navbar.php');
+
 
         //This code checks the $_GET array to determine what page to display, this is a one page website
         if (isset($_GET['page'])){
           $page_name = $_GET['page'];
 
           //Checks if a page with the name in the $_GET array exists
-          if (file_exists("$page_name.php")){
+          if (file_exists("$page_name.php") && $_GET['page'] != '%index%'){
             //If the page does exist then it is displayed
             include("$page_name.php");
           }
@@ -55,6 +55,7 @@
         else{
           include('home.php');
         }
+        include('navbar.php');
         include('footer.php');
       ?>
     </div>
