@@ -1,7 +1,7 @@
 <!doctype html>
 <?php
   //sets up $dbconnect initially, this is used to connect to database when ever any sql code is used
-  $dbconnect = mysqli_connect("localhost", "root", "root", "devota");
+  $dbconnect = mysqli_connect("localhost", "dssrrgxqyr", "5Rgn5WBS7k", "dssrrgxqyr");
 
   /*Starts a session if no sessions have been started, this is done so information in the session can be accessed by the page
   i.e. allows the website to know if you are logged in or not*/
